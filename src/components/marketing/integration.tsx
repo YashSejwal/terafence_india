@@ -26,7 +26,7 @@ interface Device {
 
 const DEVICES: Device[] = [
   {
-    image: "/images/urp.png",
+    image: "/images/devices/1-urp/image-1.png",
     name: "1-URP",
     description: "Ultimate security solution - powered by FPGA",
     color: "#F72585",
@@ -49,7 +49,7 @@ const DEVICES: Device[] = [
     ],
   },
   {
-    image: "/images/bsg.png",
+    image: "/images/devices/bsg/image-1.png",
     name: "BSG",
     description: "Enterprise-grade protection for critical systems",
     color: "#3A0CA3",
@@ -72,7 +72,7 @@ const DEVICES: Device[] = [
     ],
   },
   {
-    image: "/images/one.png",
+    image: "/images/devices/121/image-1.png",
     name: "121",
     description: "Device with unparalleled security features",
     color: "#F72585",
@@ -95,7 +95,7 @@ const DEVICES: Device[] = [
     ],
   },
   {
-    image: "/images/vs.png",
+    image: "/images/devices/vsecure/image-1.png",
     name: "VSecure",
     description: "Advanced Device for Secure CCTV Networks",
     color: "#7209B7",
@@ -118,7 +118,7 @@ const DEVICES: Device[] = [
     ],
   },
   {
-    image: "/images/mbs.png",
+    image: "/images/devices/mbsecure/image-1.png",
     name: "MBSecure+",
     description: "Next-gen security platform for evolving threats",
     color: "#4CC9F0",
