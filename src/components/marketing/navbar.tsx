@@ -37,8 +37,8 @@ const NAV_LINKS: NavLink[] = [
     ],
   },
   {
-    name: "Contact",
-    href: "/contact/contact",
+    name: "Technology",
+    href: "/technology",
   },
   {
     name: "Products",
@@ -93,10 +93,6 @@ const NAV_LINKS: NavLink[] = [
     ],
   },
   {
-    name: "Downloads",
-    href: "/download",
-  },
-  {
     name: "Use Cases",
     href: "/usecases",
     subMenu: [
@@ -136,6 +132,15 @@ const NAV_LINKS: NavLink[] = [
         description: "Solutions for foreign military sales",
       },
     ],
+  },
+  {
+    name: "Downloads",
+    href: "/download",
+  },
+  
+  {
+    name: "Contact",
+    href: "/contact/contact",
   },
 ];
 
