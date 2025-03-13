@@ -37,7 +37,7 @@ export default function TeamPage() {
     },
     {
       name: "Jose Kurian",
-      role: "Vice President and Co-Founder",
+      role: "Co-Founder and Vice President Alliances",
       image: "/images/team/jk.png",
       linkedin: "https://www.linkedin.com/in/jose-kurian-93b8051/",
       background: "Digital Transformation Expert",

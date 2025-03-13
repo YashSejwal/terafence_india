@@ -123,7 +123,7 @@ const NAV_LINKS: NavLink[] = [
       },
       {
         name: "Cloud Security",
-        href: "/usecases",
+        href: "/usecases/cloud-security",
         description: "Secure cloud connectivity solutions",
       },
       {
