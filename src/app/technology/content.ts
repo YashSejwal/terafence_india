@@ -135,7 +135,7 @@ export const content = {
       {
         title: "Hardware vs. Software Solutions",
         description:
-          "FPGA-based hardware solutions offer physical security guarantees that software-based solutions cannot match.",
+          "FPGA-based hardware solutions offer security guarantees that software solutions can't match.",
         points: [
           "Physical enforcement of unidirectional data flow",
           "Immune to software vulnerabilities and exploits",
@@ -185,12 +185,14 @@ export const content = {
         description:
           "Experience our FPGA-based data diode technology firsthand with a personalized demonstration.",
         buttonText: "Request Demo",
+        link: "mailto:info@terafence.in?subject=Request%20a%20Demo",
       },
       {
         title: "Speak to an Expert",
         description:
           "Connect with our security specialists to discuss your specific requirements and challenges.",
         buttonText: "Contact Us",
+        link: "mailto:info@terafence.in?subject=Request%20a%20Demo",
       },
     ],
   },

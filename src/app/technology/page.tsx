@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 "use client"
 
 import type React from "react"
@@ -113,7 +114,7 @@ export default function Home() {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: 0.3 }}
-                className="text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight mb-8 bg-clip-text text-transparent bg-gradient-to-r from-indigo-700 via-blue-600 to-sky-500"
+                className="text-5xl pb-4 md:text-6xl lg:text-7xl font-bold tracking-tight mb-8 bg-clip-text text-transparent bg-gradient-to-r from-indigo-700 via-blue-600 to-sky-500"
               >
                 {content.hero.headline}
               </motion.h1>
@@ -197,7 +198,7 @@ export default function Home() {
             transition={{ duration: 0.6 }}
             className="max-w-4xl mx-auto text-center mb-12"
           >
-            <h1 className="text-4xl md:text-5xl font-bold mb-8 bg-clip-text text-transparent bg-gradient-to-r from-indigo-700 via-blue-600 to-sky-500">
+            <h1 className="text-4xl pb-2 md:text-5xl font-bold mb-8 bg-clip-text text-transparent bg-gradient-to-r from-indigo-700 via-blue-600 to-sky-500">
               {content.technology.title}
             </h1>
             <p className="text-xl text-slate-600 font-light">{content.technology.description}</p>
@@ -367,15 +368,15 @@ export default function Home() {
             className="overflow-x-auto"
           >
             <div className="min-w-[800px]">
-              <Tabs defaultValue="table" className="w-full">
-                <TabsList className="mb-10 bg-indigo-700/50 mx-auto w-auto backdrop-blur-sm rounded-full p-1">
+              <Tabs defaultValue="features" className="w-full">
+                {/* <TabsList className="mb-10 bg-indigo-700/50 mx-auto w-auto backdrop-blur-sm rounded-full p-1">
                   <TabsTrigger value="table" className="data-[state=active]:bg-indigo-600 rounded-full px-6">
                     Comparison Table
                   </TabsTrigger>
                   <TabsTrigger value="features" className="data-[state=active]:bg-indigo-600 rounded-full px-6">
                     Feature Breakdown
                   </TabsTrigger>
-                </TabsList>
+                </TabsList> */}
                 <TabsContent value="table">
                   <Table>
                     <TableHeader>
@@ -479,6 +480,7 @@ export default function Home() {
                       <p className="text-slate-600 mb-10 font-light">{card.description}</p>
                       <Button
                         variant={index === 0 ? "default" : "outline"}
+                        onClick={() => window.location.href = card.link}
                         className={
                           index === 0
                             ? "w-full py-6 rounded-full bg-gradient-to-r from-indigo-600 via-blue-600 to-sky-500 hover:from-indigo-700 hover:via-blue-700 hover:to-sky-600 shadow-lg hover:shadow-indigo-300/50 transition-all duration-300 text-base font-medium"

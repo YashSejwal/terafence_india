@@ -31,20 +31,30 @@
       "static/chunks/main-app.js",
       "static/chunks/app/about/team/page.js"
     ],
-    "/contact/contact/page": [
+    "/download/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/contact/contact/page.js"
+      "static/chunks/app/download/page.js"
     ],
     "/_not-found/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
       "static/chunks/app/_not-found/page.js"
     ],
-    "/download/page": [
+    "/usecases/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/download/page.js"
+      "static/chunks/app/usecases/page.js"
+    ],
+    "/about/story/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/about/story/page.js"
+    ],
+    "/technology/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/technology/page.js"
     ],
     "/devices/page": [
       "static/chunks/webpack.js",
