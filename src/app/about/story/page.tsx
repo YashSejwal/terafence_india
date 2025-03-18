@@ -171,8 +171,11 @@ function IndiaPresence() {
 
   const locations = [
     { id: "ahmedabad", name: "Ahmedabad", x: 41, y: 47 },
-    { id: "bangalore", name: "Bangalore", x: 45, y: 76 },
+    { id: "bangalore", name: "Bangalore", x: 44.3, y: 76 },
     { id: "noida", name: "Duhai, Ghaziabad", x: 45.6, y: 30 },
+    { id: "kerala", name: "Kerala", x: 43, y: 85 },
+    { id: "tamilnadu", name: "Tamil Nadu", x: 45.4, y: 84 },
+    // { id: "noida", name: "Duhai, Ghaziabad", x: 45.6, y: 30 },
   ];
 
   return (
@@ -223,27 +226,26 @@ function IndiaPresence() {
               >
                 <div className="relative">
                   <div className="w-5 h-5 bg-blue-600 rounded-full z-10 relative cursor-pointer"></div>
-                  <div className="absolute -inset-1 bg-blue-400 rounded-full opacity-50 animate-ping"></div>
+                  <div className="absolute -inset-1 bg-rose-400 rounded-full opacity-50 animate-ping"></div>
                 </div>
               </motion.div>
 
               <AnimatePresence>
                 {activeLocation === location.id && (
                   <motion.div
-                    initial={{ opacity: 0, y: 5 }}
+                    initial={{ opacity: 0, y: 0 }}
                     animate={{ opacity: 1, y: 0 }}
-                    exit={{ opacity: 0, y: 5 }}
-                    className="absolute bg-white px-4 py-2 rounded-lg shadow-lg z-10 border border-blue-100"
+                    exit={{ opacity: 0, y: 0 }}
+                    className="absolute bg-white px-4 py-2 rounded-lg shadow-lg z-5 border border-blue-100"
                     style={{
                       left: `${location.x}%`,
                       top: `${location.y - 6}%`,
-                      transform: "translate(-50%, -100%)",
+                      transform: "translate(-100%, -100%)",
                     }}
                   >
                     <p className="text-blue-700 font-bold whitespace-nowrap">
                       {location.name}
                     </p>
-                    <div className="absolute -bottom-1 left-1/2 transform -translate-x-1/2 w-2 h-2 bg-white rotate-45 border-r border-b border-blue-100"></div>
                   </motion.div>
                 )}
               </AnimatePresence>

@@ -58,19 +58,40 @@ export default function ContactPage() {
   })
 
   // Form submission handler
-  const onSubmit = async (data: FormValues) => {
-    setIsSubmitting(true)
-
-    try {
-      await new Promise((resolve) => setTimeout(resolve, 1500))
-      console.log("Form submitted:", data)
-      setIsSubmitted(true)
-    } catch (error) {
-      console.error("Error submitting form:", error)
-    } finally {
-      setIsSubmitting(false)
-    }
+  interface FormData {
+    firstName: string;
+    lastName: string;
+    email: string;
+    phone: string;
+    company: string;
+    jobTitle: string;
+    businessSegment: string;
+    helpType: string;
+    referralSource: string;
+    additionalDetails?: string;
   }
+
+  const onSubmit = async (data: FormData) => {
+    setIsSubmitting(true);
+    try {
+      const response = await fetch("/api/contact", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(data),
+      });
+  
+      if (response.ok) {
+        setIsSubmitted(true);
+      } else {
+        console.error("Failed to send email");
+      }
+    } catch (error) {
+      console.error("Error submitting form", error);
+    }
+    setIsSubmitting(false);
+  };
 
   const inputVariants = {
     focus: { scale: 1.02, transition: { type: "spring", stiffness: 300 } },
